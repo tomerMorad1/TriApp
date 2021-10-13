@@ -1,0 +1,125 @@
+.home {
+    font-family: poiret;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.app-preview {
+    width: 90%;
+    background-color: #a8dacd;
+    padding: 10px;
+    border-radius: 2rem;
+    display: flex;
+    justify-content: space-between;
+    color: inherit;
+}
+
+.app-preview h1 {
+    margin: 10px 0 0;
+}
+
+.app-preview h3 {
+    margin: 10px 0;
+}
+
+.app-preview.app2 {
+    flex-direction: row-reverse;
+}
+
+.app-preview .app-img {
+    padding: 5px;
+    border-radius: 2rem;
+    width: 45%;
+    height: 22vh;
+    display: flex;
+    justify-content: center;
+}
+
+.app-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+}
+
+.app-preview.app1 .app-img {
+    background-color: #f28482;
+}
+
+.app-preview.app2 .app-img {
+    background-color: #acf5f1;
+}
+
+.app-preview.app3 .app-img {
+    background-color: #f6bd60;
+}
+
+.app-preview .app-info {
+    padding: 20px;
+    width: 45%;
+}
+
+.team-head {
+    margin-top: 200px;
+    margin-bottom: -60px;
+}
+
+.team {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.team .member {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+}
+
+.team>.member:last-child {
+    flex-direction: row-reverse;
+}
+
+.team .member .member-img {
+    height: 200px;
+}
+
+.team .member .member-img img {
+    height: 100%;
+    border-radius: 50%;
+    border: 5px solid #a8dacd;
+}
+
+.team .member .member-info {
+    max-width: 200px;
+}
+
+@media (max-width: 800px) {
+    .app-preview, .app-preview.app2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .app-preview .app-img {
+        width: 90%;
+    }
+    .app-preview .app-info {
+        width: 90%;
+        text-align: center;
+    }
+    .team-head {
+        margin-top: 200px;
+        margin-bottom: 0px;
+    }
+    .team {
+        width: 90%;
+        flex-direction: column;
+    }
+    .team .member {
+        display: flex;
+        justify-content: space-between;
+    }
+}

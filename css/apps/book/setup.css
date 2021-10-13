@@ -1,0 +1,33 @@
+.main-layout {
+    max-width: 1300px;
+    margin: 30px auto 0px;
+    font-family: 'Grandstander', cursive;
+    color: #2e2e2e;
+}
+
+.book-details .red {
+    color: red;
+    background-color: inherit;
+}
+
+.book-details .green {
+    color: green;
+    background-color: inherit;
+}
+
+/* .active {
+    color: lightblue;
+    background-color: inherit;
+} */
+
+@keyframes blink-2 {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}

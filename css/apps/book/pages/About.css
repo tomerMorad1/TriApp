@@ -1,0 +1,17 @@
+.about {
+    margin: 0 auto;
+    background-color: lightcyan;
+    width: 70%;
+    padding: 50px;
+    text-align: center;
+}
+
+.about ul, .about ol {
+    list-style-type: none;
+}
+
+.about a:hover {
+    color: darkblue;
+    border-top: darkblue solid 2px;
+    border-bottom: darkblue solid 2px;
+}

@@ -1,0 +1,80 @@
+.long-preview {
+    position: relative;
+    min-height: 200px;
+    border: #f28482 1px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px 30px;
+    background-color: whitesmoke;
+}
+
+.long-preview:hover {
+    cursor: pointer;
+    box-shadow: 0px 5px 5px 0px #f6aaa9, 0px -5px 5px 0px #f6aaa9;
+}
+
+.long-preview .star {
+    position: absolute;
+    left: 3px;
+    top: 5px;
+    background-color: inherit;
+    font-size: 1.3rem;
+    padding: 5px;
+    border-radius: 100%;
+    border: 0;
+    margin-inline-end: 5px;
+    cursor: pointer;
+}
+
+.long-preview .btns {
+    position: absolute;
+    right: 5px;
+}
+
+.long-preview .btns button {
+    background-color: inherit;
+    height: 30px;
+    width: 30px;
+    padding: 5px;
+    border-radius: 100%;
+    border: 0;
+    margin-inline-end: 5px;
+    cursor: pointer;
+}
+
+.long-preview .btns button:hover {
+    background-color: #fabbba;
+}
+
+.long-preview .btns button img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.long-preview h1 {
+    font-size: 1.6rem;
+    margin: 30px 0 0;
+}
+
+.long-preview h2 {
+    font-size: 1.2rem;
+}
+
+.long-preview h2 small {
+    color: gray;
+    font-size: 0.8rem;
+    margin: 0;
+}
+
+.long-preview p {
+    padding: 10px;
+}
+
+.long-preview small {
+    padding: 0px 10px;
+    color: gray;
+    text-align: right;
+}

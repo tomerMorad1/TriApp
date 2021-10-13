@@ -1,0 +1,100 @@
+.note-add {
+    margin: 3.125rem;
+}
+
+.note-add button img {
+    width: 40px;
+}
+
+.note-add button {
+    background-color: inherit;
+    border: none;
+    padding-top: 6px;
+}
+
+.fonts-container {
+    gap: 10px;
+    margin-inline-end: 5px;
+}
+
+.note-add button:hover {
+    background-color: inherit;
+    border: none;
+    padding-top: 6px;
+    cursor: pointer;
+}
+
+.note-add textarea {
+    border: none;
+    border-radius: 0.8rem;
+    font-size: .875rem;
+    letter-spacing: .01428571em;
+    font-family: Roboto, Arial, sans-serif;
+    line-height: 1.25rem;
+    background-color: inherit;
+    height: inherit;
+    width: 65%;
+    padding: .5rem;
+    resize: none;
+}
+
+.txt-container {
+    margin: 0 auto;
+    max-width: 500px;
+    height: 50px;
+    box-shadow: 0px 0px 9px 0px #686865ab;
+    border-radius: 0.8rem;
+    display: flex;
+}
+
+.note-add textarea:focus {
+    outline: none;
+}
+
+.btn-chosen {
+    color: rgb(132 165 157);
+}
+
+@media (max-width: 655px) {
+    /* .fas.fa-pencil-alt::before {
+        font-size: 15px;
+    }
+    .fas.fa-imag::before {
+        font-size: 15px;
+    }
+    .far.fa-file-video::before {
+        font-size: 15px;
+    }
+    .fas.fa-list::before {
+        font-size: 15px;
+    }
+    .note-add button img {
+        width: 30px;
+    } */
+    .note-add {
+        margin: 3.125rem 10px;
+    }
+    .txt-container {
+        flex-direction: column;
+        width: 90%;
+    }
+    .fonts-container {
+        gap: 21px;
+        margin-inline-end: 5px;
+        position: relative;
+        top: -45px;
+        left: 30%;
+        z-index: 1;
+    }
+    .note-add textarea {
+        position: absolute;
+        width: 90%;
+    }
+
+    .note-add .add-btn {
+        width: 40px;
+        position: absolute;
+        right: 12%;
+        z-index: 1;
+    }
+}

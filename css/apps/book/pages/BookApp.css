@@ -1,0 +1,17 @@
+.book-app {
+    min-height: calc(100vh - 250px);
+    padding-bottom: 50px;
+}
+
+.book-app a {
+    color: #2e2e2e;
+    text-decoration: none;
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+.book-app a:hover {
+    color: whitesmoke;
+    border-top: whitesmoke solid 2px;
+    border-bottom: whitesmoke solid 2px;
+}

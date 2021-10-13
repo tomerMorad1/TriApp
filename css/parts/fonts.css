@@ -1,0 +1,64 @@
+@font-face {
+    font-family: alison;
+    src: url("../../fonts/alison/Allison-Regular.ttf")
+}
+
+@font-face {
+    font-family: caveat;
+    src: url("../../fonts/caveat/Caveat-VariableFont_wght.ttf")
+}
+
+@font-face {
+    font-family: chelsea;
+    src: url("../../fonts/chelsea/ChelseaMarket-Regular.ttf")
+}
+
+@font-face {
+    font-family: cinzel-bold;
+    src: url("../../fonts/cinzel/CinzelDecorative-Bold.ttf")
+}
+
+@font-face {
+    font-family: cinzel-regular;
+    src: url("../../fonts/cinzel/CinzelDecorative-Regular.ttf")
+}
+
+@font-face {
+    font-family: cookie;
+    src: url("../../fonts/cookie/Cookie-Regular.ttf")
+}
+
+@font-face {
+    font-family: fredericka;
+    src: url("../../fonts/fredericka/FrederickatheGreat-Regular.ttf")
+}
+
+@font-face {
+    font-family: klee;
+    src: url("../../fonts/klee/KleeOne-Regular.ttf")
+}
+
+@font-face {
+    font-family: klee-one;
+    src: url("../../fonts/klee-one/KleeOne-Regular.ttf")
+}
+
+@font-face {
+    font-family: merienda;
+    src: url("../../fonts/merienda/MeriendaOne-Regular.ttf")
+}
+
+@font-face {
+    font-family: poiret;
+    src: url("../../fonts/poiret/PoiretOne-Regular.ttf")
+}
+
+@font-face {
+    font-family: rampart;
+    src: url("../../fonts/rampart/RampartOne-Regular.ttf")
+}
+
+@font-face {
+    font-family: rock;
+    src: url("../../fonts/rock/RockSalt-Regular.ttf")
+}

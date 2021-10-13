@@ -1,0 +1,47 @@
+.mail-filter {
+    position: absolute;
+    top: 35px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.mail-filter .search-img {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    background-color: white;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-right: 1px lightgray solid;
+}
+
+.mail-filter .search-img img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.mail-filter input {
+    background-color: white;
+    height: 40px;
+    border: 0;
+    padding: 0 10px;
+}
+
+.mail-filter input:focus, .mail-filter select:focus {
+    outline: 0;
+}
+
+.mail-filter select {
+    padding-left: 10px;
+    border: 0;
+    border-left: 1px lightgray solid;
+    border-top-right-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+}
+
+@media(max-width: 800px) {
+    .mail-filter {
+        top: 220px;
+    }
+}

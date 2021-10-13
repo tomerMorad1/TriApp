@@ -1,0 +1,130 @@
+.mail-nav {
+    margin-top: 20px;
+    width: 270px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-nav img {
+    mix-blend-mode: multiply;
+}
+
+.mail-nav a {
+    color: #f28482;
+}
+
+.mail-nav .compose {
+    width: 80%;
+    margin-inline-start: 20px;
+    margin-bottom: 20px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    font-weight: 800;
+    border: 2px #f28482 inset;
+    border-radius: 2rem;
+    transition: .5s;
+}
+
+.mail-nav .compose:hover {
+    cursor: pointer;
+    color: #ff3c39;
+    background-color: #ffbebe;
+}
+
+.mail-nav .compose .add-img {
+    height: inherit;
+    display: flex;
+    align-items: center;
+}
+
+.mail-nav .compose img {
+    height: 80%;
+}
+
+.nav-item {
+    width: 90%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    height: 40px;
+    padding: 30px 20px;
+    border-top-right-radius: 3rem;
+    border-bottom-right-radius: 3rem;
+    font-size: 1.1rem;
+    transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    background-color: #ffbfbe;
+}
+
+.mail-nav .nav-item.chosen {
+    cursor: pointer;
+    color: whitesmoke;
+    background-color: #f28482;
+}
+
+.inbox-img {
+    width: 40px;
+}
+
+.nav-item img {
+    width: 100%;
+}
+
+.nav-item h4 {
+    flex-grow: 1;
+    text-align: right;
+}
+
+.nav-item .trash-img {
+    width: 35px;
+}
+
+.nav-item .draft-img {
+    width: 37px;
+}
+
+@media (max-width: 800px) {
+    .mail-nav {
+        margin-top: -20px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+    }
+    .mail-nav .compose {
+        z-index: 4;
+        position: fixed;
+        bottom: 10px;
+        right: 20px;
+        width: 150px;
+        font-size: 1rem;
+        background-color: whitesmoke;
+    }
+    .nav-item {
+        max-width: 65px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+        gap: 5px;
+        height: 100px;
+        padding: 10px 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 3rem;
+        font-size: 0.8rem;
+        transition: background-color 0.5s;
+    }
+    .nav-item.inbox {
+        position: relative;
+    }
+    .nav-item h4 {
+        position: fixed;
+        top: 132px;
+    }
+}

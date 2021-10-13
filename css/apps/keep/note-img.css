@@ -1,0 +1,33 @@
+.note-img {
+    background-color: inherit;
+    width: 250px;
+    min-height: 280px;
+    border: 1px solid #bfbcbcb8;
+    border-radius: 0.8rem;
+    display: inline-block;
+    break-inside: avoid-column;
+    margin: 0;
+}
+
+.note-img img {
+    height: 300px;
+    width: 99.6%;
+    border-radius: .8rem .8rem 0 0;
+    object-fit: cover;
+}
+
+.note-img:hover {
+    box-shadow: 0px 0px 9px 0px #686865ab;
+}
+
+.note-img h1 {
+    font-size: 0.85em;
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center
+}
+
+@media (max-width: 655px) {
+    .note-img {
+        width: 350px;
+    }
+}

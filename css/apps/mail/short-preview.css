@@ -1,0 +1,145 @@
+.mail-preview {
+    display: flex;
+    padding: 5px 30px 5px 10px;
+    align-items: center;
+    border-bottom: 1px #f28482 solid;
+    transition: 0.2s;
+    font-size: 1.05rem;
+    min-height: 41px;
+}
+
+.mail-preview:hover {
+    padding: 5px 20px 5px 10px;
+    border: #f28482 1px solid;
+    box-shadow: 0px 5px 5px 0px #f6aaa9, 0px -5px 5px 0px #f6aaa9;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.mail-preview .from {
+    width: 20%;
+}
+
+.mail-preview h1 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.mail-preview.read, .mail-preview.read h1 {
+    font-weight: 400;
+    background-color: rgb(240, 240, 240);
+    color: gray;
+    font-size: 1rem;
+}
+
+.mail-preview .mail-info {
+    width: 70%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+}
+
+.mail-preview .mail-info small {
+    display: flex;
+    align-items: center;
+}
+
+.mail-preview .mail-info p {
+    margin: 0;
+    font-size: 0.8rem;
+}
+
+.mail-preview .date {
+    width: 10%;
+    text-align: right;
+}
+
+.mail-preview .read-btn, .mail-preview .trash-btn {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    border: 0;
+    background-color: inherit;
+}
+
+.mail-preview button:hover {
+    background-color: #fabbba;
+    cursor: pointer;
+}
+
+.mail-preview .read-btn img, .mail-preview .trash-btn img {
+    mix-blend-mode: multiply;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.mail-preview .trash-btn img {
+    height: 70%;
+}
+
+.mail-preview .btns {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 15%;
+    margin-left: 20px;
+}
+
+.mail-preview .star {
+    width: 30px;
+}
+
+@media (max-width: 800px) {
+    .mail-preview {
+        position: relative;
+        flex-direction: column;
+        padding: 0 20px;
+        align-items: flex-start;
+        min-height: 100px;
+        justify-content: space-evenly;
+    }
+    .mail-preview .star {
+        position: absolute;
+        right: 10px;
+        top: 10px;
+    }
+    .mail-preview .from {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .mail-preview h1 {
+        margin: 0;
+        font-size: 1.2rem;
+    }
+    .mail-preview.read, .mail-preview.read h1 {
+        font-size: 1.2rem;
+    }
+    .mail-preview .mail-info {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 5px;
+    }
+    .mail-preview .mail-info h1 {
+        font-size: 1rem;
+    }
+    .mail-preview .mail-info p {
+        margin: 0;
+        font-size: 0.8rem;
+    }
+    .mail-preview h1.date {
+        width: 100%;
+        text-align: right;
+        font-weight: 400;
+        color: #f28482;
+    }
+    .mail-preview .btns {
+        justify-self: flex-end;
+        align-self: flex-end;
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,9 @@
+.review-list {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff4e3;
+    padding: 15px;
+    font-family: 'Grandstander', cursive;
+    text-align:center;
+    border-radius: 1rem;
+}

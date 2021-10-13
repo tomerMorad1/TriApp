@@ -1,0 +1,51 @@
+.note-list {
+    gap: 50px;
+    flex-direction: column;
+}
+
+.pinned-note-list {
+    padding-top: 20px;
+    column-count: 1;
+    border-bottom: 1px solid #0000001a;
+    padding-bottom:20px;
+}
+
+.pinned-note-list img {
+    width: 50px;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    z-index: 1;
+}
+
+.unpinned-note-list {
+    column-count: 1;
+    gap: 25px;
+}
+
+@media (min-width: 660px) {
+    .unpinned-note-list {
+        column-count: 2;
+    }
+    .pinned-note-list {
+        column-count: 2;
+    }
+}
+
+@media (min-width: 880px) {
+    .unpinned-note-list {
+        column-count: 3;
+    }
+    .pinned-note-list {
+        column-count: 3;
+    }
+}
+
+@media (min-width: 1200px) {
+    .unpinned-note-list {
+        column-count: 4;
+    }
+    .pinned-note-list {
+        column-count: 4;
+    }
+}

@@ -1,0 +1,139 @@
+.mail-details {
+    min-height: calc(100vh - 250px);
+    display: flex;
+    font-family: Roboto, RobotoDraft, Helvetica, Arial, sans-serif;
+}
+
+.mail-details .mail-info {
+    border-top: 1px solid #e9bebd;
+    border-bottom: 1px solid #e9bebd;
+    position: fixed;
+    background-color: whitesmoke;
+    z-index: 2;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 75%;
+    width: 80%;
+    box-shadow: 0 0 5px 0px #f6aaa9;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-details .mail-info .top-btns {
+    max-height: 40px;
+    border-bottom: 1px solid #e9bebd;
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline-end: 20px;
+}
+
+.mail-details .mail-info .top-btns div {
+    display: flex;
+    align-items: center;
+}
+
+.mail-details .mail-info .top-btns .back-btn {
+    margin-inline-start: 20px;
+}
+
+.mail-details .mail-info .top-btns .delete-btn {
+    margin-inline-start: 10px;
+}
+
+.mail-details .mail-body {
+    flex-grow: 10;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mail-details .mail-body h1 {
+    font-size: 1.7rem;
+    margin: 1rem 0 2rem 0;
+}
+
+.mail-details .mail-body h2 {
+    margin: 0;
+}
+
+.mail-details .mail-body h2 span {
+    color: rgb(119, 119, 119);
+    font-size: 1rem;
+}
+
+.mail-details .mail-body h2 small {
+    font-weight: 400;
+    font-size: 1rem;
+    color: darkgrey;
+}
+
+.mail-details .mail-body p {
+    background-color: rgb(238, 238, 238);
+    padding: 10px;
+    flex-grow: 1;
+    margin-bottom: 0;
+}
+
+.mail-details .mail-body .date {
+    padding: 5px 15px;
+    align-self: flex-end;
+    justify-self: flex-end;
+}
+
+.mail-details .mail-info .bottom-btns {
+    max-height: 40px;
+    border-top: 1px solid #e9bebd;
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-inline-end: 20px;
+}
+
+.mail-details button {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    border: 0;
+}
+
+.mail-details button img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    mix-blend-mode: multiply;
+}
+
+.mail-details button:hover {
+    background-color: #fabbba;
+    cursor: pointer;
+}
+
+.details-screen {
+    z-index: 2;
+    position: fixed;
+    inset: 0;
+    background-color: rgb(0, 0, 0, 0.5);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.details-screen.open {
+    pointer-events: all;
+    opacity: 1;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .mail-details .mail-info {
+        top: 45%;
+        height: 85%;
+        width: 90%;
+        z-index: 5;
+    }
+}

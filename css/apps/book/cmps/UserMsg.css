@@ -1,0 +1,61 @@
+.user-msg {
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: whitesmoke;
+}
+
+.user-msg.success {
+    border: rgb(76, 241, 76) 10px solid;
+}
+
+.user-msg.error {
+    border: rgb(241, 76, 76) 10px solid;
+}
+
+.user-msg h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.user-msg.success h1 {
+    color: rgb(76, 241, 76);
+}
+
+.user-msg.error h1 {
+    color: rgb(241, 76, 76);
+}
+
+.user-msg button {
+    font-size: 1.5rem;
+    font-weight: 900;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 0;
+    position: absolute;
+    right: 10px;
+    color: whitesmoke;
+}
+
+.user-msg.success button {
+    background-color: rgb(76, 241, 76);
+}
+
+.user-msg.error button {
+    background-color: rgb(241, 76, 76);
+}
+
+.user-msg a {
+    font-size: 1.5rem;
+    color: rgb(3, 83, 129);
+}
+.user-msg a:hover {
+    border-top: 2px lightblue solid;
+    border-bottom: 2px lightblue solid;
+    color: rgb(80, 165, 235);
+}

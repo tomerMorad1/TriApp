@@ -1,0 +1,32 @@
+.note-video {
+    background-color: inherit;
+    width: 250px;
+    min-height: 240px;
+    border: 1px solid #bfbcbcb8;
+    border-radius: 0.8rem;
+    display: inline-block;
+    margin: 0;
+    break-inside: avoid-column;
+}
+
+.note-video iframe {
+    height: 80%;
+    width: 99.6%;
+    border-radius: .8rem .8rem 0 0;
+}
+
+.note-video:hover {
+    box-shadow: 0px 0px 9px 0px #686865ab;
+}
+
+.note-video h1 {
+    font-size: 0.85em;
+    font-family: Roboto, Arial, sans-serif;
+    text-align: center
+}
+
+@media (max-width: 655px) {
+    .note-video {
+        width: 350px;
+    }
+}

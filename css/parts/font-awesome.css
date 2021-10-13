@@ -1,0 +1,122 @@
+    @font-face {
+        font-family: regular;
+        src: url("../../font-awesome/fa-regular-400.ttf")
+    }
+    
+    @font-face {
+        font-family: "solid";
+        src: url("../../font-awesome/fa-solid-900.ttf")
+    }
+    
+    .far::before {
+        font-family: regular;
+    }
+    
+    .fas::before {
+        font-family: "solid";
+    }
+    
+    .far.fa-square::before {
+        content: "\f0c8";
+    }
+    
+    .far.fa-check-square::before {
+        content: "\f14a";
+    }
+    
+    .far.fa-trash-alt::before {
+        content: "\f2ed";
+    }
+    
+    .fas.fa-palette::before {
+        content: "\f53f";
+    }
+    
+    .fas.fa-thumbtack::before {
+        content: "\f08d";
+    }
+    
+    .far.fa-copy::before {
+        content: "\f0c5";
+    }
+    
+    .fas.fa-pencil-alt::before {
+        content: "\f303";
+        font-size: 20px;
+    }
+    
+    .fas.fa-imag::before {
+        content: "\f03e";
+        font-size: 20px;
+    }
+    
+    .far.fa-file-video::before {
+        content: "\f1c8";
+        font-size: 20px;
+    }
+    
+    .fas.fa-list::before {
+        content: "\f03a";
+        font-size: 20px;
+    }
+    
+    .fas.fa-star::before {
+        text-shadow: 0px 0px 5px rgb(0, 0, 0);
+        color: yellow;
+        content: "\f005";
+    }
+    
+    .far.fa-star::before {
+        color: gray;
+        content: "\f005";
+    }
+    
+    .fas.fa-caret-square-down::before {
+        content: "\f150";
+        font-size: 40px;
+    }
+    .fas.fa-caret-square-up::before {
+        content: "\f151";
+        font-size: 40px;
+    }
+    /* HOVER */
+    
+    .fa-pencil-alt:hover {
+        cursor: pointer;
+        color: rgb(132 165 157);
+    }
+    
+    .fa-imag:hover {
+        cursor: pointer;
+        color: rgb(132 165 157);
+    }
+    
+    .fa-file-video:hover {
+        cursor: pointer;
+        color: rgb(132 165 157);
+    }
+    
+    .fa-list:hover {
+        cursor: pointer;
+        color: rgb(132 165 157);
+    }
+    
+    .fa-trash-alt:hover {
+        cursor: pointer;
+        color: rgb(110, 110, 110);
+    }
+    
+    .fa-palette:hover {
+        cursor: pointer;
+        color: rgb(110, 110, 110);
+    }
+    
+    .fa-thumbtack:hover {
+        cursor: pointer;
+        color: rgb(110, 110, 110);
+    }
+    
+    .fa-copy:hover {
+        cursor: pointer;
+        color: rgb(110, 110, 110);
+    }

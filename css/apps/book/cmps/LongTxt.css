@@ -1,0 +1,12 @@
+
+/* Long-txt */
+
+.book-desc span {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.book-desc span:hover {
+    cursor: pointer;
+    color: white;
+}

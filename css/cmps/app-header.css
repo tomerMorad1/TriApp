@@ -1,0 +1,130 @@
+.app-header {
+    height: 110px;
+    padding: 10px 40px;
+    background-color: #84a59d;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #d9fff5;
+    border-bottom: 8px #95bdb3 solid;
+    box-shadow: 0px 0px 20px 5px rgba(86, 107, 102, 0.63);
+    font-family: klee;
+}
+
+.app-header .main-logo {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    color: inherit;
+}
+
+.app-header .main-logo h1 {
+    font-size: 2.2rem;
+    margin: 0;
+}
+
+.app-header .main-logo img {
+    height: 100%;
+}
+
+.app-header .logos {
+    height: 60px;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.app-header .book-logo, .app-header .keep-logo {
+    height: 80%;
+    mix-blend-mode: multiply;
+    transition: transform 0.5s;
+}
+
+.app-header .mail-logo {
+    mix-blend-mode: multiply;
+    height: 70%;
+    transition: transform 0.5s;
+}
+
+.app-header div {
+    height: 60px;
+}
+
+.app-header img {
+    height: 80%;
+}
+
+.app-header .book-logo:hover, .keep-logo:hover, .mail-logo:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.logos .active {
+    transform: scale(1.3);
+    border-bottom: 2px black solid;
+    box-shadow: 0px 5px 5px -5px rgb(85, 85, 85);
+}
+
+.btn-toggle-nav {
+    border: none;
+    background-color: inherit;
+    display: none;
+}
+
+.btn-toggle-nav:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .app-header .logos {
+        position: fixed;
+        right: 0;
+        align-items: flex-end;
+        z-index: 2;
+        width: 100%;
+        height: inherit;
+        background-color: #d9fff5e1;
+        justify-content: space-evenly;
+        border-bottom: unset;
+        box-shadow: unset;
+        transform: translateY(-102%);
+        transition: transform .6s;
+    }
+    .app-header .nav-down {
+        transform: translateY(0);
+    }
+    .app-header .book-logo:hover {
+        transform: translateY(-20px);
+        mix-blend-mode: multiply;
+    }
+    .keep-logo:hover {
+        transform: translateY(-20px);
+        mix-blend-mode: multiply;
+    }
+    .mail-logo:hover {
+        transform: translateY(-20px);
+        mix-blend-mode: multiply;
+    }
+    .keep-logo.active, .book-logo.active, .mail-logo.active {
+        border-bottom: unset;
+        box-shadow: unset;
+        transform: translateY(-20px) !important;
+        mix-blend-mode: multiply;
+    }
+    .app-header .book-logo, .app-header .keep-logo {
+        height: 40%;
+        mix-blend-mode: multiply;
+    }
+    .app-header .mail-logo {
+        height: 40%;
+        mix-blend-mode: multiply;
+    }
+    .btn-toggle-nav {
+        display: block;
+        position: relative;
+        left: 30px;
+        z-index: 3;
+        background-color: #d9fff5;
+        border-radius: 10px;
+    }
+}

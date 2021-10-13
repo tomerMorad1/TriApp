@@ -1,0 +1,10 @@
+.note-app {
+    min-height: calc(100vh - 250px);
+    padding: 0 50px 50px;
+}
+
+@media (max-width: 655px) {
+    .note-app {
+        padding: 0 10px 50px;
+    }
+}
